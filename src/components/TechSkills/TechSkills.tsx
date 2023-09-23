@@ -17,10 +17,10 @@ export const TechSkills = () => {
 
             <div className="flex items-center flex-col justify-center text-center absolute
                 h-[15rem] w-[35rem] -right-[-3rem] mt-[-21rem]
-                bg-emerald-800 shadow-md shadow-slate-500 rounded-lg">
+                bg-social shadow-md shadow-sombra rounded-lg">
 
                     <div className="absolute h-[3rem] w-[15rem] -right-[-10rem] mt-[-15rem]
-                        bg-emerald-400 shadow-md shadow-slate-500 rounded-lg">
+                        bg-skill shadow-md shadow-sombra rounded-lg">
                             <h1 className="text-center uppercase font-bold mt-3">Skills</h1>
                     </div>
 

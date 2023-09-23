@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#303638',
-        social: '#181c1d',
-        sombra: '#505a5c',
+        background: '#000000',
+        div: '#2a2b31',
+        social: '#5c5b66',
+        sombra: '#9694a5',
+        skill: '#dad4eb',
       },
     },
   },

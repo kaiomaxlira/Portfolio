@@ -1,13 +1,13 @@
-import Navbar from '../components/navbarsocial/Navbar'
 import Div01 from '../components/boxes/Div01'
 import { TechSkills } from '@/components/TechSkills/TechSkills'
+import { NavSocial } from '@/components/navbarsocial/NavSocial'
 
 export default function Home() {
   return (
 
-   <div>
+   <div className='bg-background'>
     <Div01/>
-    <Navbar/>
+    <NavSocial/>
     <TechSkills/>
    </div>
 

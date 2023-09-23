@@ -1,12 +1,16 @@
 import Image from "next/image";
 import React from 'react'
 
-type SkillsProps = {
+
+
+type SocialProps = {
     image: string;
     url: string;
 }
 
-export const Skills = ({ image, url }: SkillsProps) => {
+
+
+export const Social = ({ image, url }: SocialProps) => {
     return (
         <>
             <a href={url} target="_blank" rel="noopener noreferrer">
