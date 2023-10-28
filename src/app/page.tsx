@@ -1,14 +1,14 @@
-import Div01 from '../components/boxes/Div01'
-import { TechSkills } from '@/components/TechSkills/TechSkills'
-import { NavSocial } from '@/components/navbarsocial/NavSocial'
+import React from "react";
+import Navbar from "@/components/navbar/navbar"
+import Persona from "@/components/div01/persona"
+
 
 export default function Home() {
   return (
 
-   <div className='bg-background'>
-    <Div01/>
-    <NavSocial/>
-    <TechSkills/>
+   <div className="h-screen bg-cover bg-center" style={{ backgroundImage: "url('/images/background.jpg')" }}>
+      <Persona/>
+      <Navbar/>
    </div>
 
   )
