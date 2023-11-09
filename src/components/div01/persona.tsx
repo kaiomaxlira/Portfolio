@@ -1,5 +1,6 @@
 import { Social } from "./components/social";
 import Logo from "@/assets/kaio-max01.png";
+import Aboutme from "@/components/welcome/aboutme"
 
 const Persona: React.FC = () => {
   return (
@@ -7,7 +8,9 @@ const Persona: React.FC = () => {
       <div className="bg-white w-1/3 p-4 h-screen flex items-center justify-center">
         <Social image={Logo} src="" />
       </div>
+      <Aboutme/>
     </div>
+     
   );
 };
 export default Persona;
