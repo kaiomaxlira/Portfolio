@@ -4,18 +4,17 @@ import { Social } from "@/components/welcome/components/social"
 
 import GitHub from "@/assets/GitHub.svg"
 import Linkedin from "@/assets/linkedin.svg"
-import Instagram from "@/assets/instagram.svg"
 
 const aboutme = () => {
   return (
     <div className="bg-red-900 rounded-3xl w-[51rem] h-[31rem] ml-[3rem] mt-[6rem]">
       <div className="">
-        <Title title="BEM-VINDO" />
-        <div className="grid grid-cols-3 gap-2px w-[20rem] h-[20rem] mt-[23rem] ml-[1rem]">
+        <Title title="BEM-VINDO" />        
+        <div className="grid grid-cols-2 gap-2px w-[6rem] h-[3rem] mt-[23rem] ml-[1rem]">
         <Social image={GitHub} url='https://github.com/kaiomaxlira'/>
-        <Social image={Linkedin} url='https://github.com/kaiomaxlira'/>
-        <Social image={Instagram} url='https://github.com/kaiomaxlira'/>
+        <Social image={Linkedin} url='https://www.linkedin.com/in/kaio-max-16b33a187/'/>
         </div>
+        <div className="mb-[20rem]"><h6>Social:</h6></div>
       </div>
     </div>
    
