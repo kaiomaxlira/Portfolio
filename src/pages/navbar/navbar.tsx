@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Menu: React.FC = () => {
   return (
@@ -6,20 +7,24 @@ const Menu: React.FC = () => {
       <nav className="fixed top-0 w-full h-[5rem]">
         <ul className="space-x-7 font-bold text-lg flex ml-[10rem] mt-[1.5rem] ">
           <li className="my-0">
-            <a href="/pagina inicial">Página Inicial</a>
+            <Link href="/aboutme" legacyBehavior>
+              <a>About Me</a>
+            </Link>
           </li>
           <li className="my-0">
-            <a href="/produtos">Produtos</a>
+            <Link href="/skills" legacyBehavior>
+              <a>Skills</a>
+            </Link>
           </li>
           <li className="my-0">
-            <a href="/contatos">Contatos</a>
-          </li>
-          <li className="my-0">
-            <a href="/sobre">Sobre</a>
+            <Link href="/sobre" legacyBehavior>
+              <a>Sobre</a>
+            </Link>
           </li>
         </ul>
       </nav>
     </div>
   );
 };
+
 export default Menu;

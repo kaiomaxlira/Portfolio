@@ -1,6 +1,6 @@
 import { Social } from "./components/social";
 import Logo from "@/assets/kaio-max01.png";
-import Aboutme from "@/components/welcome/aboutme"
+import Aboutme from "@/pages/aboutme/aboutme"
 
 const Persona: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Title } from "@/components/title";
-import { Social } from "@/components/welcome/components/social"
+import { Social } from "@/pages/aboutme/components/social"
 
 import GitHub from "@/assets/GitHub.svg"
 import Linkedin from "@/assets/linkedin.svg"
@@ -14,7 +14,11 @@ const aboutme = () => {
         <Social image={GitHub} url='https://github.com/kaiomaxlira'/>
         <Social image={Linkedin} url='https://www.linkedin.com/in/kaio-max-16b33a187/'/>
         </div>
-        <div className="mb-[20rem]"><h6>Social:</h6></div>
+        <div className="ml-[1rem] mt-[-9rem]"><h6>Social:</h6>
+        <h6>(xx) xxxxx-xxxx</h6>
+        <h6>kaiomax01@gmail.com</h6>
+        </div>
+
       </div>
     </div>
    
