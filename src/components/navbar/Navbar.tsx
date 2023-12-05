@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const NavBar: React.FC = () => {
  return (
-  <div className="w-1/2 ml-[36rem]">
+  <div >
     <nav className="fixed top-0 w-full h-[5rem]">
       <ul className="space-x-7 font-bold text-lg flex ml-[10rem] mt-[1.5rem] ">
         <li className="my-0">
