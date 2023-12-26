@@ -26,13 +26,13 @@ const MyPage: React.FC = () => {
   return (
     <>
       <div
-        className=" flex h-screen bg-cover bg-center"
+        className=" flex h-screen bg-cover bg-center bg-zinc-800"
         style={{ backgroundImage: "url('/images/background.jpg')" }}
       >
         <div className="bg-zinc-800 w-1/3 p-4 h-screen flex items-center justify-center">
           <Social image={Logo} src="" />
         </div>
-        <div className="bg-red-900 rounded-3xl w-[51rem] h-[31rem] ml-[3rem] mt-[6rem]">
+        <div className=" bg-gradient-to-r from-gray-300 via-gray-400 to-white shadow-md rounded-3xl w-[51rem] h-[31rem] ml-[3rem] mt-[6rem]">
         {conteudoMap[ conteudo as keyof typeof conteudoMap]}
         </div>
         <div className="fixed top-0 w-full z-10 ml-[35rem]">
