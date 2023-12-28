@@ -9,15 +9,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#000000',
-        div: '#2a2b31',
-        social: '#5c5b66',
-        sombra: '#9694a5',
-        skill: '#dad4eb',
-      },
+        conteudo: '#606060',
+        conteudo2: '#d1cbd1',
+        logotipo: '#bbb8b5',
+        navbar: '#fffcff',
+      },   
     },
   },
 
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    function({ addComponents }: { addComponents: Function }) {
+      const newUtilities = {
+        '.overlay': {
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        }
+      }
+      addComponents(newUtilities)
+    }
+   ]
 }
 export default config
