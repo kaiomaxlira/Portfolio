@@ -5,7 +5,6 @@ import Navbar from "@/components/navbar/Navbar";
 import Logo from "@/assets/kaio-max01.png";
 import { Social } from "@/components/logo/components/social";
 import Aboutme from "@/components/aboutme/Aboutme";
-import Sobre from "@/components/sobre/Sobre";
 import Projeto from "@/components/projetos/Projetos";
 import Skills from "@/components/skills/Skills";
 
@@ -14,7 +13,6 @@ const MyPage: React.FC = () => {
 
   const conteudoMap = {
     Aboutme: <Aboutme />,
-    Sobre: <Sobre />,
     Projeto: <Projeto />,
     Skills: <Skills />,
   };
