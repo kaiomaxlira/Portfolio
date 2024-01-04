@@ -12,17 +12,17 @@ const NavBar: React.FC<NavBarProps> = ({ alterarConteudo }) => {
         <ul className="space-x-7 font-bold text-lg flex ml-[10rem] mt-[1.5rem]">
           <li className="my-0">
             <Link href="/Aboutme" passHref legacyBehavior >
-              <a className="hover:text-navbar transition duration-700 ease-in-out" onClick={(e) => {e.preventDefault(); alterarConteudo("Aboutme")}}>Sobre me</a>
+              <a className="hover:text-navbar transition duration-700 ease-in-out font-libre text-2xl" onClick={(e) => {e.preventDefault(); alterarConteudo("Aboutme")}}>Sobre me</a>
             </Link>
           </li>
           <li className="my-0">
             <Link href="/Skills" passHref legacyBehavior>
-              <a className="hover:text-navbar transition duration-700 ease-in-out" onClick={(e) => {e.preventDefault(); alterarConteudo("Skills")}}>Habilidades</a>
+              <a className="hover:text-navbar transition duration-700 ease-in-out font-libre text-2xl" onClick={(e) => {e.preventDefault(); alterarConteudo("Skills")}}>Habilidades</a>
             </Link>
           </li>
           <li className="my-0">
             <Link href="/Projetos" passHref legacyBehavior>
-              <a className="hover:text-navbar transition duration-700 ease-in-out" onClick={(e) => {e.preventDefault(); alterarConteudo("Projeto")}}>Projetos</a>
+              <a className="hover:text-navbar transition duration-700 ease-in-out font-libre text-2xl" onClick={(e) => {e.preventDefault(); alterarConteudo("Projeto")}}>Projetos</a>
             </Link>
           </li>
         </ul>

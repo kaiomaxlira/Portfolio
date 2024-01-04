@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        libre: ['Libre Baskerville', 'serif'],
+      },
       colors: {
         conteudo: '#606060',
         conteudo2: '#d1cbd1',
