@@ -7,7 +7,7 @@ interface InfoProps {
 
 export const Info = ({ title, description }: InfoProps) => {
     return (
-        <div className="ml-[2rem] mt-[-8rem] font-libre text-base">
+        <div className="flex items-center gap-2 font-libre text-base">
             <h6>{title}</h6>
             <p>{description}</p>
         </div>

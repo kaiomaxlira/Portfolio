@@ -17,7 +17,7 @@ const NavBar: React.FC<NavBarProps> = ({ alterarConteudo }) => {
           </li>
           <li className="my-0">
             <Link href="/Skills" passHref legacyBehavior>
-              <a className="hover:text-navbar transition duration-700 ease-in-out font-libre text-2xl" onClick={(e) => {e.preventDefault(); alterarConteudo("Skills")}}>Habilidades</a>
+              <a className="hover:text-navbar transition duration-700 ease-in-out font-libre text-2xl" onClick={(e) => {e.preventDefault(); alterarConteudo("Skills")}}>Ferramentas</a>
             </Link>
           </li>
           <li className="my-0">
