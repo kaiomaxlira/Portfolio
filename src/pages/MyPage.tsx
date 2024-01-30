@@ -19,7 +19,7 @@ const MyPage: React.FC = () => {
 
   function alterarConteudo(novoConteudo: string) {
     setConteudo(novoConteudo);
-  }
+  }""
   
   return (
     <>
