@@ -12,29 +12,29 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
-import { styles, navItems } from './styles';
+import { styles, drawerWidth, navItems } from './styles';
 import Logo from '../../assets/Logo.svg';
 
 interface Props {
   window?: () => Window;
 }
 
-export default function DrawerAppBar(props: Props) {
+export default function Header(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => setMobileOpen((prev) => !prev);
 
   const drawer = (
-    <Box sx={styles.drawerContent} onClick={handleDrawerToggle}>
+    <Box onClick={handleDrawerToggle}>
       <Box sx={styles.mobileLogo}>
-        <Logo />
+        <Logo style={{ height: 40, width: 'auto' }} />
       </Box>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={styles.listItemButton}>
+            <ListItemButton sx={styles.mobileMenuItem}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -43,30 +43,26 @@ export default function DrawerAppBar(props: Props) {
     </Box>
   );
 
-  const container = window?.().document.body;
+  const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav" sx={styles.appBar}>
-        <Toolbar>
+        <Toolbar sx={styles.toolbar}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={styles.iconButton}
+            sx={styles.menuButton}
           >
             <MenuIcon />
           </IconButton>
-
-          {/* Logo desktop */}
           <Box sx={styles.logoContainer}>
-            <Logo />
+            <Logo style={{ height: 40, width: 'auto' }} />
           </Box>
-
-          {/* Links de navegação */}
-          <Box sx={styles.navBox}>
+          <Box sx={styles.navItemsContainer}>
             {navItems.map((item) => (
               <Button key={item} sx={styles.navButton}>
                 {item}
@@ -75,8 +71,6 @@ export default function DrawerAppBar(props: Props) {
           </Box>
         </Toolbar>
       </AppBar>
-
-      {/* Drawer mobile */}
       <nav>
         <Drawer
           container={container}
